@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+
+        }
+        form{
+          width: 450px;
+          margin: 15px;
+          padding: 15px;
+          box-shadow: 4px 4px 4px 4px gray;
+        }
+        h3{
+            text-align: center;
+            font-family: Arial;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        h6{
+            text-align: center;
+            font-size: 15px;
+            font-family: Arial;
+            color: gray;
+        }
+        .border{
+            margin-bottom: 1px solid black;
+            border-bottom: 10px;
+        }
+        label{
+            font-family: Arial;
+            font-size: 13px;
+        }
+        .form-1{
+            width: 40px;
+        }
+        .w-25{
+            display: inline;
+        }
+        .border-2{
+            border: 1px solid gray;
+        }
+        .para{
+            font-family: Arial;
+            font-size: 12px;
+        }
+        .para-2{
+            font-family: Arial;
+            font-size: 13px;
+            color: blue;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <form method="get" class="rounded rounded-2">
+        <div class="mb-2">
+            <h3>Create a new account</h3>
+            <h6>It's quick and easy.</h6>
+        </div>
+        <div class="border">
+
+        </div>
+        <div><br>
+        <div class="mb-2" style="display: flex;">
+          <input type="text" name="Name" pattern="\w{4,8}" class="form-control" placeholder="First name">&nbsp;&nbsp;<input type="text" pattern="\w{6,8}" name="Surname" class="form-control" placeholder="Surname"> 
+        </div>
+        <div class="mb-2">
+            <input type="email" name="email" pattern="\w{15,30}\gmail.com" placeholder="Mobile number or email address" class="form-control">
+        </div>
+        <div class="mb-2">
+            <input type="password" name="password" pattern="\d{6,8}"  placeholder="New password" class="form-control">
+        </div>
+        <div>
+            <label class="form-label">Date of birth<span></span></label> <span class="bi bi-question-circle-fill"></span>
+        </div>
+        <div class="mb-2">
+            <span>
+                <select class="form-control w-25" name="Day">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                    <option>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                    <option>18</option>
+                    <option>19</option>
+                    <option>20</option>
+                    <option>21</option>
+                    <option>22</option>
+                    <option>23</option>
+                    <option>24</option>
+                    <option>25</option>
+                    <option>26</option>
+                    <option>27</option>
+                    <option>28</option>
+                    <option>29</option>
+                    <option>30</option>
+                    <option>31</option>
+            </select>
+            </span>&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>
+                <select class="form-control w-25" name="Month"> 
+                    <option>Jan</option>
+                    <option>Feb</option>
+                    <option>Mar</option>
+                    <option>Apr</option>
+                    <option>May</option>
+                    <option>Jun</option>
+                    <option>Jul</option>
+                    <option>Aug</option>
+                    <option>Sep</option>
+                    <option>Oct</option>
+                    <option>Nov</option>
+                    <option>Dec</option>
+                </select>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+            <span>
+                <select class="form-control w-25" name="Year">
+                    <option>2023</option>
+                    <option>2022</option>
+                    <option>2021</option>
+                    <option>2020</option>
+                    <option>2019</option>
+                    <option>2018</option>
+                    <option>2017</option>
+                    <option>2016</option>
+                    <option>2015</option>
+                    <option>2014</option>
+                    <option>2013</option>
+                    <option>2012</option> 
+                    <option>2011</option>
+                    <option>2010</option>
+                    <option>2009</option>
+                    <option>2008</option>
+                    <option>2007</option>
+                    <option>2006</option>
+                    <option>2005</option>
+                    <option>2004</option>
+                    <option>2003</option>
+                    <option>2002</option>
+                    <option>2001</option>
+                    <option>2000</option>
+                    <option>1999</option>
+                    <option>1998</option>
+                    <option>1997</option>
+                    <option>1996</option>
+                    <option>1995</option>
+                    <option>1994</option>
+                    <option>1993</option>
+                    <option>1992</option>
+                    <option>1991</option>
+                    <option>1990</option>
+                </select>&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Gender</label> <span class="bi bi-question-circle-fill"></span>
+            <div class="mb-3">
+                <span class="border-2 rounded p-2 m-2">
+                Female&nbsp;&nbsp;<input type="radio" name="gender" value="Female">
+                </span>
+                <span class="border-2 rounded p-2 m-2">
+                    Male&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="Male"> 
+                </span>
+                <span class="border-2 rounded p-2 m-2">
+                    Custom&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="Custom">
+                </span>
+            </div>
+        </div>
+        <p class="para">
+            People who use our service may have uploaded your contact information to 
+            Facebook
+        <span class="para-2"> Learn more.</span></p>
+        <div class="mb-2"> 
+            <p class="para"><span class="para">By clicking Sign Up, you agree to our Terms,</span> <span class="para-2">Privacy Policy</span> and <span class="para-2">Cookies Policy.</span>
+           You may receive SMS notifications from us and can opt out at any time.</p>
+        </div>
+        <div class="mb-2">
+            <button class="btn btn-success w-50" style="margin-left: 100px; font-size: 18px; font-family: Arial;">
+                Sign Up
+            </button>
+        </div>
+        <div class="mb-2 text-center" style="color: blue; font-family: Arial;">
+            Already have an account?
+        </div>
+    </form>
+</body>
+</html>

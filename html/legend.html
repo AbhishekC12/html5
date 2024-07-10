@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        dl{
+            display: grid;
+            grid-template-columns: 2fr 8fr;
+        }
+        dt{
+            background-color: darkcyan;
+            color: white;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        dd{
+            background-color: gray;
+            color: white;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+        fieldset{
+            margin-bottom: 25px;
+            box-shadow: 4px 4px 2px black;
+        }
+        legend{
+            background-color: darkcyan;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+            box-shadow: 2px 2px 2px gray;
+            width: 120px;
+            border-radius: 120px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>Personal Details</legend>
+        <dl>
+            <dt>User Name</dt>
+            <dd>some name</dd>
+            <dt>Age</dt>
+            <dd>some age</dd>
+            <dt>Date of Birth</dt>
+            <dd>some date of birth</dd>
+        </dl>
+    </fieldset>
+    <fieldset>
+        <legend>Contact Details</legend>
+        <dl>
+            <dt>Address</dt>
+            <dd>some address</dd>
+            <dt>Email</dt>
+            <dd>some@gmail.com</dd>
+            <dt>Mobile</dt>
+            <dd>8208322540</dd>
+        </dl>
+    </fieldset>
+</body>
+</html>

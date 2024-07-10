@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+       body{
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 900px;
+        }
+        form{
+            border:1px solid gray;
+            padding: 15px;
+            margin: 15px;  
+        }
+        p{
+            font-family: Arial;
+            font-size: 13px;
+        }
+        label{
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+            font-family: Arial;
+        }
+        span{
+            color:blue;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <form class="w-25 rounded-2">
+    <div class="mb-2">
+       <h3>Create Account</h3> 
+    </div>
+    <div class="mb-2">
+        <label class="form-label" for="name">Your name</label>
+        <div class="mb-2">
+            <input type="text" name="name" placeholder="First and last name" class="form-control">
+        </div>
+    </div>
+    <div class="mb-2">
+        <label class="form-label">Mobile number</label>
+        <div class="input-group"> 
+            <select class="rounded-2" name="Mobile number">
+                <option>IN +91</option>
+                <option>DE +49</option>
+                <option>FJ +679</option>
+                <option>EG +20</option>
+                <option>CZ +420</option>
+                <option>AU +61</option>
+                <option>BO +591</option>
+                <option>BD +880</option>
+                <option>AL +355</option>
+                <option>AT +43</option>
+                <option>AS +1</option>
+            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" name="number" value="number" class="form-control rounded-2">
+        </div>
+    </div>
+    <div class="mb-2">
+        <label class="form-label" for="email">Email (optional)</label>
+        <div class="mb-2">
+            <input type="email" name="email" class="form-control">
+        </div>
+    </div>
+    <div class="mb-2">
+        <label class="form-label" for="password">Password</label>
+        <div class="mb-2">
+            <input type="password" pattern="\d{6,8}" name="password" class="form-control">
+        </div>
+    </div>
+    <div>
+        <p>
+            <span></span>Passwords must be at least 6 characters.</p>
+    </div>
+    <div class="mb-3">
+        <p>
+            By enrolling your mobile phone number, you consent
+            to receive automated security notifications via
+            text message from Amazon. Message and data rates may
+            apply.
+        </p>
+    </div>
+    <div>
+        <button class="btn btn-warning w-100">
+            Continue
+        </button>
+    </div><br>
+    <div>
+      <p>Already have an account? <a href="amazon-form1.html">Sign in</a><span class="bi bi-caret-right-fill"></span><br>
+    Buying for work?
+    <a href="amazon-form2.html">Create a free business account</a><span class="bi bi-caret-right-fill"></span></p>
+    </div>
+    <div>
+        <p>By creating an account or logging in, you agree to 
+        Amazon’s<span>Conditions of Use</span> and <span>Privacy Policy.</span></p>
+    </div>
+</form>
+</body>
+</html>

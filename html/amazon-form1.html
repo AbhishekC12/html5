@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+       body {
+       display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        }
+        form{
+            border:1px solid gray;
+            padding: 15px;
+            margin: 15px; 
+        }
+        span{
+            color: blue;
+        }
+        .account{
+            border: 1px solid gray;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 10px;
+        }
+        h3{
+            font-family: Arial;
+        }
+        p{
+            font-family: Arial;
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <form method="get" class="w-25 rounded-2">
+        <div>
+            <h3>Sign in</h3>
+        </div>
+        <div class="mb-2">
+            <label class="form-label" for="email"><b>Email or mobile phone number</b></label>
+            <div class="mb-3">
+                <input type="email" name="email" class="form-control" autofocus>
+            </div>
+        </div>
+        <div class="mb-2">
+            <button class="btn btn-warning w-100">
+                Continue
+            </button>
+        </div>
+        <div>
+            <p>By continuing, you agree to Amazon's <span>Conditions of Use</span> 
+            and <span>Privacy Notice.</span></p>
+        </div>
+        <div class="mb-2">
+            <span class="bi bi-caret-right-fill" style="color:black"><span>Need help?</span></span>
+        </div>
+    </form>
+</body>
+</html>

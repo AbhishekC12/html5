@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        li{
+            list-style: none;
+        }
+        .div{
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+            padding: 10px;
+        }
+        .ratings{
+           font-family: Arial;
+            font-size: 30px;   
+        }
+        h1{
+            padding: 10px;
+        }
+        .rating,.review{
+            font-family: Arial;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+            <h1>Ratings & Reviews</h1>
+            <div class="div">
+        <div>
+            <li class="ratings">4.3 <span class="bi bi-star-fill"></span></li>
+            <li><span class="rating">57,776 Ratings &</span></li>
+            <li><span class="review">5,929 Reviews</span></li>
+        </div>
+        <div class="reviews">
+            <li>5<span><meter min="1" max="5" value="5"></meter>36,733</span></li>
+            <li>4<span><meter min="1" max="5" value="3"></meter>12,242</span></li>
+            <li>3<span><meter min="1" max="5" value="2"></meter>3,229</span></li>
+            <li>2<span><meter min="1" max="100" low="20" high="30" value="10"></meter>1,202</span></li>
+            <li>1<span><meter min="1" max="100" low="20" high="30" value="20"></meter></meter>4,370</span></li>
+        </div>
+    </div>
+</body>
+</html>

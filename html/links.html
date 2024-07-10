@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .div{
+            display: grid;
+            grid-template-columns: 1fr 11fr;
+            column-gap: 10px;
+        }
+       .list{
+        display: flex;
+        justify-content: space-between;
+        list-style: none;
+       }
+       .public{
+        background-color: black;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+       }
+       .kid{
+        background-color: black;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+       }
+       .men{
+        background-color: black;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+       }
+       .women{
+        background-color: black;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+       }
+       .images{
+        background-color: black;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 20px;
+       }
+       .container{
+        overflow: auto;
+        height: 600px;
+       }
+       .frame{
+        border: 2px solid black;
+        box-shadow: 2px 2px 2px red;
+       }
+       a{
+        text-decoration: none;
+        color: white;
+       }
+    </style>
+</head>
+<body class="container">
+        <header>
+            <nav>
+            <ul class="list">
+            <div class="public">
+            <li><a href="../HTML/home.html" target="view">Home</a></li>
+            </div>
+            <div class="kid">
+            <li><a href="../HTML/kids.html" target="view">Kid's Fashion</a></li>
+            </div>
+            <div class="men">
+            <li><a href="../HTML/mens.html" target="view">men's Fashion</a></li>
+           </div>
+            <div class="women">
+            <li><a href="../HTML/womens.html" target="view">women's Fashion</a></li>
+            </div>
+        </div>
+            </ul>
+            </nav>
+    </header>
+    <div class="div">
+        <article>
+            <div class="images">
+           <div>
+            <img src="../public/images/kids.jpg" width="200" height="200">
+           </div>
+            <div>
+                <img src="../public/images/men1.jpg" width="200" height="200">
+            </div>
+            <div>
+                <img src="../public/images/women.jpg" width="200" height="200">
+            </div>
+        </div>
+        </article>
+        <main>
+            <iframe height="625" width="100%" name="view" class="frame"></iframe>
+        </main>
+    </div>
+</body>
+</html>

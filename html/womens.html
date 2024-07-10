@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .card {
+            width: 200px;
+            padding: 5px;
+            margin: 20px;
+           border: 1px solid green;
+        }
+        .card-header {
+            height: 150px;
+        }
+        .card-body {
+            height: 110px;
+            text-align: center;
+        }
+        .card-body p {
+            font-weight: bold;
+            font-size: 20px;
+            font-family: Arial;
+        }
+        .rating {
+            color:goldenrod;
+        }
+        .card-footer {
+            text-align: center;
+            padding: 10px;
+        }
+        .btn {
+            background-color: black;
+            color:white;
+            padding: 5px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns:3fr 3fr 3fr 3fr;
+        }
+        .site-features {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        .bi-truck, .bi-arrow-left-right, .bi-tag, .bi-bag {
+            color : red;
+        }
+        .feature-text {
+            font-family: Arial;
+            color:gray;
+            margin-left: 35px;
+            margin-top: 10px;
+        }
+        .site-highlights {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+            text-align: center;
+            font-family: Arial;
+        }
+        .sh-title {
+            font-size: 35px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .sh-subtitle {
+            color:gray;
+            font-weight: bold;
+        }
+        .sh-text {
+            font-size: 18px;
+            width: 600px;
+            line-height: 30px;
+        }
+        .site-banner-1 {
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+            grid-gap: 50px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/women-dress.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>All Accessories</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens20.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>Black Pants</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star- fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens2.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>combo's</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens3.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>White Combo</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+    </div>  
+    
+  
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens4.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>Gray Combo</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-half"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens6.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>Boats & T-shirts</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens9.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>Pants</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens7.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>Hurry Up 10% Off</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+    </div>    
+
+    
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens8.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>Upto 10% Discount</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-half"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens9.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>Buy one get one free</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-half"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens10.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>Latest</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens11.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>Bag's</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-half"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+    </div>    
+
+    
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens12.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>Dresses</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens13.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>Free for Today Deal</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-half"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens14.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>Latest Combo</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens15.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>Free Offers</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+    </div>    
+
+   
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens16.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+            <P>Fashion for the day</P>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-half"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens17.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>Offers closes soon..</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens18.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>latest</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img src="../public/images/womens19.jpg" width="100%" height="150">
+            </div>
+            <div class="card-body">
+                <p>New..</p>
+                <div class="rating">
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                    <span class="bi bi-star-fill"></span>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="btn">
+                    see more
+                </div>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+             color : white;
+            border-radius: 10px;
+            background-image: url("../public/images/wheather-2.jpg");
+            height: 500px;
+            width: 350px;
+            align-items: center;
+            background-size: cover;
+            margin-left:600px;
+            margin-top: 100px;
+        }
+        .header{
+            text-align: center;
+            align-items: center;
+            font-family: Arial;
+            font-size: 30px;
+        }
+        p{
+            font-size:20px;
+        }
+        .body{
+            display: flex;
+            justify-content: space-around;
+        }
+        dl{
+            display: grid;
+            grid-template-columns: 9fr 3fr ;
+            padding-left: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3>Nagpur</h3>
+            <div>
+            <p>clear sky</p>
+        </div>
+        <div>
+            <div style="font-size: 60px; font-family: Arial;">
+                7&deg;c
+            </div>
+            <div style="font-size: 15px;">
+                <span>Pressure: 1023</span> | <span>Humidity: 82&deg;c</span>
+            </div><br>
+            <div style="border-top:1px solid white"><br>
+                    <div style="font-size: 15px;">
+                   <div class="body">
+                    <span>Now</span>
+                    <span>10</span>
+                    <span>11</span>
+                    <span>12</span>
+                    <span>13</span>
+                    <span>14</span>
+                   </div><br>
+                   <div class="body">
+                    <span>6.98&deg;</span>
+                    <span>7.16&deg;</span> 
+                    <span>7.21&deg;</span>
+                    <span>7.52&deg;</span>
+                    <span>8.13&deg;</span>
+                    <span>9.09&deg;</span>
+                   </div><br>
+            <div style="border: 1px solid white;"></div><br>
+                <dl style="font-size: 15px;">
+                    <dt>Today</dt>
+                    <dd>7&deg;</dd>
+                    <dt>Tomorrow</dt>
+                    <dd>12&deg;</dd>
+                    <dt>Day after tomorrow</dt>
+                    <dd>10&deg;</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

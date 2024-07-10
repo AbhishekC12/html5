@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Age:in-range+span{
+            display: none;
+        }
+        #Age:out-of-range+span{
+            display: block;
+            color:red;
+        }
+        #password:invalid+span{
+            display: block;
+            color:red;
+        }
+        #password:valid+span{
+            display: none;
+        }
+        #UserName:invalid+span{
+            display: block;
+            color: red;
+        }
+        #UserName:valid+span{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" id="UserName" required><span>Name Required</span></dd>
+        <dt>Password</dt>
+        <dd><input type="password" pattern="[A-Z]{4,10}" id="password"><span>Password 4 to 10 Uppercase only</span></dd>
+        <dt>Age</dt>
+        <dd><input type="number" id="Age" min="15" max="30"><span>Age 15 to 30 Only</span></dd>
+    </dl>
+    <button>Register</button>
+</body>
+</html>

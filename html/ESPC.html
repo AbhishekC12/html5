@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #terms+span{
+            color:red
+        }
+        #terms:checked+span{
+            color: green;
+        }
+        #terms~button{
+            display: none;
+        }
+        #terms:checked~button{
+            display: block;
+        }
+       #UserName+div{
+        display: none;
+       }
+       #UserName:focus+div{
+        display: block;
+       }
+    </style>
+</head>
+<body>
+    <dl>
+        <dt>User Name</dt>
+        <dd><input type="text" pattern="[A-Z]{4,10}" id="UserName"><div>Name in Block Letters</div></dd>
+        <dt>Terms of Services</dt>
+        <dd>
+            <textarea rows="4" cols="20" disabled>License Aggrement</textarea>
+        </dd>
+        <dd>
+            <input type="checkbox" id="terms"><span>I Agree</span><br><br>
+        <button>Submit</button>
+    </dd>
+    </dl>
+</body>
+</html>

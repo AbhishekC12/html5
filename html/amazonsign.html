@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+        p{
+            font-size: 13px;
+        }
+        span{
+            color:blue;
+        }
+        button{
+            background-color:gray;
+        }
+        h3{
+            font-family: Arial;
+            font-size: 25px;
+        }
+        #amazon{
+           border: 1px solid gray;
+           text-align: center;
+          border-left: none;
+          border-right:none;
+         border-bottom: none;
+        }
+    </style>
+</head>
+<body class="container-fluid">
+    <form method="get">
+    <div style="border: 1px solid gray;" class="p-4 w-25">
+        <h3>Sign in</h3>
+    <div class="mb-2">
+        <label class="form-label" for="email">Email or mobile phone number</label>
+    <div class="mb-2">
+        <input type="email" name="email" class="form-control"  autofocus>
+    </div>
+    </div>
+    <div class="mb-2">
+        <label class="form-label" for="password" class="form-control">Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:blue;">Forgot Password</span>
+    <div class="mb-3">
+        <input type="password" name="password" pattern="\d{4,10}" class="form-control">
+    </div>
+    </div>
+    <div class="mb-2">
+        <button class="btn btn-warning w-100">Sign in</button>
+    </div>
+    <div class="mb-2">
+        <p>
+            By continuing, you agree to Amazon's <span>Conditions of Use</span>
+            and <span>Privacy Notice .</span>
+        </p>
+    </div>
+    <div class="mb-2">
+        <input type="checkbox" class="form-check-input" name="checkbox" value="signed in"> <label for="signed in" class="form-check-label">Keep me signed in.</label>
+    </div>
+    <div class="mb-2" id="amazon">
+            <h6>New to Amazon</h6>
+    </div>
+    <div class="mb-2">
+        <button class="btn btn-secondary w-100">
+            Create your Amazon account
+        </button>
+    </div>
+</div>
+</form>
+</body>
+</html>

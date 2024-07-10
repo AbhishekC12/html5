@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 700px;
+    }
+  </style>
+</head>
+<body class="container-fluid">
+  <form class="border border-2 border-primary p-3 rounded">
+    <h4>Register Product</h4>
+    <div>
+      <label for="product" class="form-label">Product Name</lable>
+      <div>
+        <input type="text" class="form-control" name="Product">
+      </div>
+    </div>
+    <div>
+      <label for="price" class="form-label">Price</label>
+      <div>
+        <input type="number" name="price" class="form-control">
+      </div>
+    </div>
+    <div>
+      <label class="form-label">Shipped To</label>
+      <div>
+        <select name="city" class="form-select">
+          <option>Choose City</option>
+          <option>Del</option>
+          <option>Hyd</option>
+          <option>mumbai</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <label class="form-label">Ratings</label>
+      <div>
+        <input type="range" class="form-range">
+      </div>
+    </div>
+    <div>
+      <label>Stock</label>
+      <div class="form-switch">
+        <input type="checkbox" class="form-check-input"><label class="form-check-label">Available</label>
+      </div>
+    </div>
+    <div>
+      <label class="form-label" for="color">Select Color</label>
+      </div>
+      <input type="color" name="color" class="form-control-color">
+     </div>
+    <div>
+      <button class="btn btn-primary w-100">Register</button>
+    </div>
+  </form>
+</body>
+</html>
